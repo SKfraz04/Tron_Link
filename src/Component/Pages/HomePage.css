@@ -1,0 +1,256 @@
+.single-scroll-page {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+
+section {
+  height: 100vh;
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-1 {
+  background-color: #135dcd;
+}
+.section1-left h1 {
+  color: white;
+  font-size: 75px;
+  font-weight: 400;
+  word-break: keep-all;
+}
+.section1-left p {
+  color: white;
+  font-size: 35px;
+  font-weight: 400;
+  word-break: keep-all;
+}
+.section1-banner img {
+  max-width: 50%;
+}
+.mobile-1 {
+  z-index: 2;
+  position: relative;
+  right: 130px;
+  top: -150px;
+}
+.mobile-2 {
+  z-index: 1;
+}
+.section2-left-discription p {
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 16px;
+  font-weight: 400;
+}
+.section2-left-discription span {
+  color: #135dcd;
+  font-size: 35px;
+  margin-right: 33px;
+}
+.section2-left h4 {
+  font-size: 40px;
+  font-weight: 400;
+}
+.section2-left h2 {
+  font-size: 50px;
+  font-weight: 400;
+  color: #135dcd;
+}
+.secure-image {
+  position: relative;
+  background: url(../../../public/image/sec_4.svg) no-repeat;
+  width: 84%;
+  height: 100%;
+}
+
+.secure-shild-ball {
+  position: absolute;
+  width: 563px;
+  left: -20px;
+  top: 235px;
+  animation: loading 3.9s linear infinite;
+}
+.secure-shild-ball img {
+  width: 55px;
+}
+.secure-shild-ball-line {
+  position: absolute;
+  top: -11px;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  background: url(../../../public/image/line-1.png) no-repeat;
+}
+
+@keyframes loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.secure-earth {
+  margin: auto;
+  width: 15rem;
+  height: 15rem;
+  top: 150px;
+  right: -150px;
+  background: url(../../../public/image/ball1.png);
+  background-size: 100% 100%;
+  position: relative;
+}
+.secure-earth-rotate {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: rotateZ(-38deg);
+  transform: rotateZ(-38deg);
+  z-index: 2;
+}
+.secure-earth-ball1 {
+  background-size: 100% 100%;
+  z-index: 1;
+  position: absolute;
+  animation: myOrbit 2s linear infinite;
+}
+@-webkit-keyframes myOrbit {
+  from {
+    -webkit-transform: rotate(0deg) translateX(5px) translateY(120px)
+      rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg) translateX(5px) translateY(120px)
+      rotate(-360deg);
+  }
+}
+
+@-moz-keyframes myOrbit {
+  from {
+    -moz-transform: rotate(0deg) translateX(100px) rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(360deg) translateX(100px) rotate(-360deg);
+  }
+}
+
+@-o-keyframes myOrbit {
+  from {
+    -o-transform: rotate(0deg) translateX(100px) rotate(0deg);
+  }
+  to {
+    -o-transform: rotate(360deg) translateX(100px) rotate(-360deg);
+  }
+}
+
+@keyframes myOrbit {
+  from {
+    transform: rotate(0deg) translateX(100px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(100px) rotate(-360deg);
+  }
+}
+
+.secure-earth-ball2 {
+  width: 05.8rem;
+  height: 05.8rem;
+  background: url(../../../public/image/ball4.svg);
+  background-size: 100% 100%;
+  position: absolute;
+  bottom: 2.2rem;
+  right: -0.75rem;
+  z-index: 1;
+}
+.secure-earth-rotate::after {
+  content: "";
+  background: url(../../../public/image/orbital.png);
+  width: 40.8rem;
+  height: 330px;
+  position: absolute;
+  display: block;
+  top: -100px;
+  left: -12.5rem;
+  transform: rotate(27deg);
+  background-size: 100% 100%;
+}
+.section3-left h4 {
+  font-size: 35px;
+  font-weight: 400;
+}
+.section3-left h2 {
+  font-size: 44px;
+  font-weight: 400;
+  color: #135dcd;
+}
+.section3-left-discription p {
+  font-size: 18px;
+  font-weight: 300;
+  align-items: center;
+}
+.section3-left-discription span {
+  font-size: 50px;
+  color: #135dcd;
+  padding-right: 40px;
+}
+.footer-contant {
+  text-align: center;
+}
+.footer-contant h3 {
+  font-size: 40px;
+}
+.footer-contant h5 {
+  font-size: 33px;
+  font-weight: 400;
+  color: #135dcd;
+}
+.footer-contant h2 {
+  font-size: 150px;
+  color: #135dcd;
+}
+button.btn.btn-primary {
+  padding: 15px 20px;
+  margin-bottom: 210px;
+}
+.footer {
+  background-color: #135dcd;
+  /* position: fixed; */
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+.footer-contant {
+  margin-bottom: 0px;
+  justify-content: space-between;
+}
+.footer-links a {
+  color: black;
+  background: white;
+  padding: 12px 12px;
+  font-size: 25px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.footer-links a:last-child {
+  background-color: transparent;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  padding: 17px;
+}
+.Privacy h6 {
+  color: white;
+  font-weight: 400;
+  font-size: 15px;
+  margin-right: 20px;
+}
+.Privacy h6:first-child {
+  color: #c2c2c2;
+  font-weight: 300;
+}
